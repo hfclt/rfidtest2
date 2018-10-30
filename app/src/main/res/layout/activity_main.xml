@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_inventor"
+                style="?android:attr/buttonStyleInset"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_launcher_reader"
+                android:onClick="repeat"
+                android:paddingTop="10dp"
+
+                android:paddingBottom="10dp"
+                android:text="循环读标" />
+
+            <Button
+                android:id="@+id/bt_accesstag"
+                style="?android:attr/buttonStyleInset"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:onClick="dataupdate"
+                android:drawableTop="@drawable/ic_launcher_writer"
+                android:text="任务及数据更新" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_filter"
+                style="?android:attr/buttonStyleInset"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_launcher_helper"
+                android:paddingTop="10dp"
+                android:onClick="dataupload"
+                android:paddingBottom="10dp"
+                android:text="数据上传" />
+
+            <Button
+                android:id="@+id/bt_settings"
+                style="?android:attr/buttonStyleInset"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+
+                android:drawableTop="@drawable/ic_launcher_viewer"
+                android:onClick="dataSave"
+                android:text="保存数据" />
+
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/testlink"
+
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="设备连接测试"
+            android:onClick="testlink"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/infos"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:text="rfdtest v1.0.0"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
